@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    color: rgb(201, 60, 60);
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.botones-container {
+    display: flex;
+    flex-direction: row; 
+}
+
+button {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(201, 60, 60);
+    border: 0;
+}
+
+.respuesta-container {
+    color: rgb(201, 60, 60);
+    margin: 30px;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block; 
+}
+
+.respuesta-container pre {
+    font-weight: bold; 
+}
