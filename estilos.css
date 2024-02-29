@@ -1,0 +1,7 @@
+h1, h2, div, a{
+    color: rgb(201, 60, 60);
+    font-size: 50px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
