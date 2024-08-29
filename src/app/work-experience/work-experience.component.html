@@ -1,0 +1,22 @@
+<h3>Experiencia Laboral</h3>
+
+<table border="0">
+  <tr>
+    <th>Fecha</th>
+    <th>Ubicación</th>
+    <th>Puesto</th>
+    <th>Empresa</th>
+    <th>Logros</th>
+  </tr>
+  <tr *ngFor="let work of workExperience">
+    <td>{{ work.fecha }}</td>
+    <td>{{ work.ubicacion }}</td>
+    <td>{{ work.puesto }}</td>
+    <td>{{ work.empresa }}</td>
+    <td>
+      <ul>
+        <li *ngFor="let logro of work.logro">{{ logro.descripccion }}</li>
+      </ul>
+    </td>
+  </tr>
+</table>
