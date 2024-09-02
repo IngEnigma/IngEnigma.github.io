@@ -1,0 +1,22 @@
+name: Develop CI_CD
+on:
+  push:
+    branches: [ "develop"]
+  pull_request:
+    branches: [ "develop"]
+jobs:
+  develop_ci_cd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 22.6.0
+        uses: actions/setup-node@v1
+        with:
+          node-verion: 22.6.0
+
+      - name: Setup
+        run: npm ci
+
+      - name: Test
+        run:
+          npm test -- --no-watch --no-progress --browser=ChromeHeadlessCI
