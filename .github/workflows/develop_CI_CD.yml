@@ -20,3 +20,9 @@ jobs:
       - name: Test
         run:
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - name: build angular, output in dist/MyCv
+        run: |
+          CI=false npm run build
+      - name: show dir
+        run:
+          ls -la dist/MyCv/browser
