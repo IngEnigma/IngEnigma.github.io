@@ -25,4 +25,4 @@ jobs:
           CI=false npm run build
       - name: show dir
         run: |
-          ls -la dist/MyCv/browser
+          ls -la dist
