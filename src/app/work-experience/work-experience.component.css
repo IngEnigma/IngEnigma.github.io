@@ -1,0 +1,76 @@
+.work_experience {
+    background-color: #f4f2ff;
+    width: 450px;
+    height: 340px;
+}
+
+h1{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#work_header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #5a15c2;
+}
+
+#work_date{
+    margin: 0;
+    padding-top: 20px;
+}
+
+#work_location{
+    margin: 0;
+    padding-top: 20px;
+}
+
+#work_body{
+    padding-left: 20px;
+}
+
+#achivements_title{
+    margin: 0px;
+    font-size: 13px;
+    color: #2d096c;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+#achivements_list{
+    display: flex;
+    gap: 8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    align-items: center;
+}
+
+#cuadradito{
+    margin: 0px;
+    background-color: #7121e8;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+#achivements{
+    margin: 0px;
+    font-size: 15px;
+}
+
+#work_title{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#work_company{
+    margin: 0;
+    font-size: 15px;
+}
