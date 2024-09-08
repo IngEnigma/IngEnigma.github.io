@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { EducationComponent } from './education/education.component';
+import { InterestsComponent } from "./interests/interests.component";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { EducationComponent } from './education/education.component';
     HeaderComponent,
     WorkExperienceComponent,
     EducationComponent,
-  ],
+    InterestsComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
