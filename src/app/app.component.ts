@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { EducationComponent } from './education/education.component';
 import { InterestsComponent } from "./interests/interests.component";
+import { SkillsComponent } from './skills/skills.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { InterestsComponent } from "./interests/interests.component";
     HeaderComponent,
     WorkExperienceComponent,
     EducationComponent,
-    InterestsComponent
+    InterestsComponent,
+    SkillsComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
