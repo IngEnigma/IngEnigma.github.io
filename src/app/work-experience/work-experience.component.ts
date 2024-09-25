@@ -16,24 +16,24 @@ export class WorkExperienceComponent {
 
   ngOnInit(): void {
     let work1 = {
-      fecha: "2018 - 2022",
+      fecha: "2023 - 2024",
       ubicacion: "Ixtac, Ver.",
-      puesto: "CEO",
-      empresa: "Waves Lab",
+      puesto: "BillieGrean",
+      empresa: "Enigma's Inc.",
       logro: [
-        {descripccion:"Construccion de un ERP en la nube de google"},
-        {descripccion:"Creacion de un cluster de hedoop y spark"}
+        {descripccion:"Diseño de la DB en Postgres"},
+        {descripccion:"Login con JWT en Angular"}
       ]
     };
 
     let work2 = {
-      fecha: "2014 - 2108",
-      ubicacion: "Orizaba, Ver.",
-      puesto: "CEO",
-      empresa: "Kubeet",
+      fecha: "2023 - 2024",
+      ubicacion: "Ixtac, Ver.",
+      puesto: "Just Type It",
+      empresa: "Enigma's Inc.",
       logro: [
-        {descripccion:"Construccion de un invernadero hidroponico"},
-        {descripccion:"Creacion de un dron autonomo"}
+        {descripccion:"Construccion del front-end"},
+        {descripccion:"Creacion de un API con GraphQL"}
       ]
     };
 
