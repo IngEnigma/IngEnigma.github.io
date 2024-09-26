@@ -1,0 +1,30 @@
+.skills {
+  background-color: #f4f2ff;
+  width: 450px;
+  height: 200px;
+}
+
+#skills_title {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#skills_items {
+  padding-left: 14px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+p {
+  display: inline-block;  
+  font-size: 15px;
+  color: #f4f2ff;
+  background-color: #8850ff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 2px;
+}
