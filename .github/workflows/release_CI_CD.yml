@@ -1,0 +1,52 @@
+name: Release CI_CD
+on:
+  push:
+    branches: [ "release"]
+  pull_request:
+    branches: [ "release"]
+jobs:
+  develop_ci_cd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 22.6.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: 22.6.0
+      - name: Setup
+        run: npm ci
+      - name: Test
+        run:
+          npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - name: build angular, output in dist/MyCv
+        run: |
+          CI=false npm run build
+      - name: show dir
+        run: |
+          ls -la dist/my-cv/browser
+      - name: download, run httpd image, container name serving_base
+        run: |
+          docker run -d --name serving_base httpd
+      - name: docker ps
+        run: |
+          docker ps
+      - name: cp angular buid to container
+        run: |
+          docker cp dist/my-cv/browser/. serving_base:/usr/local/apache2/htdocs
+      - name: list container
+        run: |
+            docker exec serving_base ls -la /usr/local/apache2/htdocs 
+            
+      - name: Build the custom Docker image
+        run: docker commit --change "ENV MODEL_NAME ${{secrets.MODEL_NAME}}"
+             serving_base ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
+      - name: show docker images
+        run: docker images
+      - name: docker login
+        env: 
+          DOCKER_USER: ${{secrets.DOCKER_USER}}
+          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        run: |
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+      - name: Docker push
+        run: docker push ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
