@@ -1,0 +1,22 @@
+.interests {
+  background-color: #f4f2ff;
+  width: 450px;
+  height: 90px;
+}
+
+#interests_title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#interests_items {
+  padding-left: 20px;
+}
+
+#items{
+  display: inline;
+  font-size: 15px;
+}

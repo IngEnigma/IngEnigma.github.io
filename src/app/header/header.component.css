@@ -1,0 +1,102 @@
+.header {
+  background-color: #f4f2ff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 900px;
+  height: 200px;
+  display: flex;
+}
+
+#about_me {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#profile_picture {
+  width: 300px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#my_data {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+#profile_img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+#name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px;
+  padding-left: 20px;
+}
+
+#profession {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+  padding-left: 20px;
+  color: #2d096c;
+}
+
+#objetive {
+  font-size: 15px;
+  margin: 0px;
+  padding-left: 20px;
+}
+
+#email {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  margin: 0px;
+  align-items: center;
+}
+
+#phone {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  margin: 0px;
+  align-items: center;
+}
+
+#address {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  margin: 0px;
+  align-items: center;
+}
+
+#github {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  margin: 0px;
+  align-items: center;
+}
+
+#my_data p {
+    gap: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}

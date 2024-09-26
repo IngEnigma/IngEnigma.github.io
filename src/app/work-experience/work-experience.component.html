@@ -1,0 +1,22 @@
+<section class="work_experience">
+  <h1 id="work_experience_title">Work Experience</h1>
+
+  <div id="works" *ngFor="let work of workExperience">
+    <div id="work_items">
+      <div id="work_header">
+        <p id="work_date">{{work.fecha}}</p><p id="work_location">{{work.ubicacion}}</p>
+      </div>
+      <div id="work_body">
+        <h3 id="work_title">{{work.puesto}}</h3>
+        <p id="work_company">{{work.empresa}}</p>
+        <div id="work_achievement">
+          <h3 id="achivements_title">Achievements</h3>
+          <div id="achivements_list" *ngFor="let logro of work.logro">
+            <div id="cuadradito"></div>
+            <p id="achivements">{{logro.descripccion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
