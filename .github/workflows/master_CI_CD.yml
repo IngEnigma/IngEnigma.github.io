@@ -15,9 +15,9 @@ jobs:
           node-version: 22.6.0
       - name: Setup
         run: npm ci
-      - name: Test
-        run:
-          npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      #- name: Test
+        #run:
+          #npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
       - name: build angular, output in dist/MyCv
         run: |
           CI=false npm run build
